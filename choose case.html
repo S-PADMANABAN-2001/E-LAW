@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+ /* background-image: url(https://drive.google.com/drive/u/0/folders/1_3fdzqBQ0_W6P31ny0_UI7mxNEMTI0fn);*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+   position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px 16px 16px 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2B1B17;
+}
+
+.dropdown {
+  float: middle;
+  position: relative;
+  display: inline-block;
+  margin: 160px 600px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #504A4B;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+  text-decoration-color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body background="wp2750284-lawyer-wallpaper-hd-mobile (1).jpg">
+
+<h2></h2>
+<p><strong></strong> <strong></strong></p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">CHOOSE CASE</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="COURT DROPDOWN.html" target="_parent">CIVIL</a>
+    <a href="COURT DROPDOWN.html" target="_parent">CRIMINAl</a>
+  </div>
+</div>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
